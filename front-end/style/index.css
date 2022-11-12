@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 1200px;
+}
+
+.link {
+  display: inline-block;
+  align-self: flex-end;
+  background: rgb(213, 224, 231);
+  color: #111;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+}
+
+section {
+  overflow: auto;
+}
+
+#table-car {
+  width: 100%;
+  min-width: 600px;
+}
+
+#table-car tr {
+  /* background: lightblue; */
+  display: grid;
+  grid-template-columns:
+    minmax(7rem, 1fr) minmax(7rem, 1fr) 5rem 9rem 6rem 6rem 6rem 8rem 10rem
+    5rem 6rem;
+  text-align: left;
+}
+
+#table-car th {
+  background: #ccc;
+}
+
+#table-car th:not(:last-of-type) {
+  border-right: 1px solid #000;
+}
+
+#table-car :is(th, td) {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 0.25rem 1rem;
+}

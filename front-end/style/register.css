@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 100%;
+  max-width: 500px;
+}
+
+form hr {
+  margin: 1rem 0;
+}
+
+form h3 {
+  margin-bottom: 0.5rem;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+form input {
+  box-sizing: border-box;
+  padding: 0.25rem 0.5rem;
+  width: 100%;
+}
+
+form label span {
+  display: block;
+  margin-bottom: 0.25rem;
+}
